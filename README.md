@@ -1,2 +1,2 @@
-# Play-store-clone
+# Play-station-clone
 This is my first repository 
