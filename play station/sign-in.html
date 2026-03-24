@@ -608,7 +608,6 @@
         </div>
     </section>
 
-    <!-- NEW RELEASES -->
     <section class="new-release">
         <div class="main-section-title">Great PS4 & PS5 games out now or coming soon</div>
         <div class="status-btn">
@@ -643,7 +642,6 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
         <h3 style="margin-bottom: 2rem;">PlayStation</h3>
         <div class="footer-content">
@@ -684,7 +682,6 @@
         <p style="text-align: center; opacity: 0.8;">© 2025 Sony Interactive Entertainment. All rights reserved.</p>
     </footer>
 
-    <!-- SIGN IN MODAL -->
     <div id="signInOverlay" class="modal-overlay"></div>
     <div id="signInModal" class="modal-overlay" style="display: flex; justify-content: center; align-items: center;">
         <div class="modal-content">
@@ -713,7 +710,6 @@
     </div>
 
     <script>
-        // Sign In Logic
         const signInBtn = document.querySelector('.sign-in-button');
         const signInModal = document.getElementById('signInModal');
         const overlay = document.getElementById('signInOverlay');
@@ -724,12 +720,10 @@
         const logoutBtn = document.querySelector('.logout-btn');
         let currentUser = null;
 
-        // Open modal
         signInBtn.addEventListener('click', () => {
             signInModal.classList.add('active');
         });
 
-        // Close modal
         const closeModal = () => {
             signInModal.classList.remove('active');
             form.reset();
@@ -742,7 +736,6 @@
         });
         overlay.addEventListener('click', closeModal);
 
-        // Form submission
         form.addEventListener('submit', (e) => {
             e.preventDefault();
             const email = document.getElementById('email').value.trim();
@@ -766,7 +759,6 @@
             }
         });
 
-        // Logout
         logoutBtn.addEventListener('click', () => {
             currentUser = null;
             form.style.display = 'block';
@@ -776,7 +768,6 @@
             document.getElementById('successMsg').style.display = 'none';
         });
 
-        // Close on Escape
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && !currentUser) {
                 closeModal();
