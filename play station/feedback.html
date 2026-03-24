@@ -211,7 +211,6 @@
             });
         });
 
-        // Form submission
         feedbackForm.addEventListener('submit', (e) => {
             e.preventDefault();
             const rating = ratingInput.value;
@@ -222,10 +221,8 @@
                 return;
             }
 
-            // Show success message
             feedbackSuccess.style.display = 'block';
             
-            // Log the feedback (in real app, send to server)
             console.log('Feedback submitted:', { rating, comment });
 
          
