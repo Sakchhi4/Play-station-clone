@@ -297,7 +297,8 @@ signInForm.addEventListener('submit', (e) => {
   }
 });
 
-// Logout functionality
+
+
 if (logoutBtn) {
   logoutBtn.addEventListener('click', () => {
     currentUser = null;
