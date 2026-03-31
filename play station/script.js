@@ -53,7 +53,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-//Ripple Effect on buttons
+
 document.querySelectorAll("button").forEach(button => {
   button.addEventListener("click", function (e) {
     const circle = document.createElement("span");
