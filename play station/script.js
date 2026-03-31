@@ -219,7 +219,6 @@ if (signInBtn) {
   });
 }
 
-// Close sign-in modal
 const closeSignInModal = () => {
   signInModal.classList.remove('active');
   signInOverlay.classList.remove('active');
