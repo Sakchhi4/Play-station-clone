@@ -129,11 +129,10 @@ const closeFeedbackModal = () => {
   feedbackSuccess.style.display = 'none';
 };
 
-// Close button for feedback modal
+
 feedbackModal.querySelector('.close-modal').addEventListener('click', closeFeedbackModal);
 feedbackOverlay.addEventListener('click', closeFeedbackModal);
 
-// Star rating logic
 stars.forEach(star => {
   star.addEventListener('click', () => {
     const value = star.getAttribute('data-value');
