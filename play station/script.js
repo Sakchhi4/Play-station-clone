@@ -25,7 +25,7 @@ function setupModal(buttonSelector, modalId, overlayId) {
   });
 }
 
-// Existing modals
+
 setupModal(".learn-button", "learnMoreModal", "learnMoreOverlay");
 const trailerButtons = document.querySelectorAll(".watch-button");
 trailerButtons.forEach(btn => {
