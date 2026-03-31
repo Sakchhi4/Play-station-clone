@@ -34,7 +34,6 @@ trailerButtons.forEach(btn => {
     });
 });
 
-// New modals for other buttons
 setupModal(".find-more-btn", "findMoreModal", "findMoreOverlay");
 setupModal(".buy-now-btn", "buyNowModal", "buyNowOverlay");
 setupModal(".store-btn", "storeModal", "storeOverlay");
