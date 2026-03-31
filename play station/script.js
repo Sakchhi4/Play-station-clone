@@ -172,7 +172,7 @@ document.querySelector('.star-rating').addEventListener('mouseleave', () => {
   });
 });
 
-// Feedback form submission
+
 feedbackForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const rating = ratingInput.value;
