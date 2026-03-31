@@ -118,7 +118,9 @@ if (feedbackBtn) {
   });
 }
 
-// Close feedback modal
+
+
+
 const closeFeedbackModal = () => {
   feedbackModal.classList.remove('active');
   feedbackOverlay.classList.remove('active');
