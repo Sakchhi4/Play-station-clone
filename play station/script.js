@@ -101,7 +101,6 @@ window.addEventListener("DOMContentLoaded", () => {
         bannerContent.style.top = "20%"; // Adjust as needed
     }
 });
-// ===== FEEDBACK MODAL LOGIC =====
 const feedbackBtn = document.querySelector('.feedback-button');
 const feedbackModal = document.getElementById('feedbackModal');
 const feedbackOverlay = document.getElementById('feedbackOverlay');
