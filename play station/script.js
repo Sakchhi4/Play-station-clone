@@ -41,7 +41,7 @@ setupModal(".find-out-btn", "findOutModal", "findOutOverlay");
 setupModal(".join-btn", "joinModal", "joinOverlay");
 setupModal(".explore-btn", "exploreModal", "exploreOverlay");
 
-// Smooth Fade-in Animations on Page Load
+
 window.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll("h1, h2, h3, p, button, img, .modal");
   elements.forEach((el, i) => {
