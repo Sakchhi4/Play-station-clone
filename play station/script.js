@@ -183,19 +183,15 @@ feedbackForm.addEventListener('submit', (e) => {
     return;
   }
 
-  // Show success message
   feedbackSuccess.style.display = 'block';
   
-  // Log the feedback (in real app, send to server)
   console.log('Feedback submitted:', { rating, comment });
 
-  // Reset and close after 2 seconds
   setTimeout(() => {
     closeFeedbackModal();
   }, 2000);
 });
 
-// Close on Escape key
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && feedbackModal.classList.contains('active')) {
     closeFeedbackModal();
