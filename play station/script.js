@@ -67,7 +67,7 @@ document.querySelectorAll("button").forEach(button => {
   });
 });
 
-//Add a Sticky Navbar
+
 window.addEventListener("scroll", () => {
   const navbar = document.querySelector(".navbar"); // replace with your nav class
   if (!navbar) return;
