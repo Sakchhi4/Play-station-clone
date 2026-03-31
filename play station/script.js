@@ -274,7 +274,7 @@ signInForm.addEventListener('submit', (e) => {
     return;
   }
   
-  // Demo credentials (in real app, this would be an API call)
+
   if (email === 'user@playstation.com' && password === 'password123') {
     currentUser = email;
     signInForm.style.display = 'none';
