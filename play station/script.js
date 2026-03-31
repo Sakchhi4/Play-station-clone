@@ -49,7 +49,7 @@ window.addEventListener("DOMContentLoaded", () => {
     el.style.transition = "opacity 0.8s ease";
     setTimeout(() => {
       el.style.opacity = 1;
-    }, i * 100); // slight delay for staggered effect
+    }, i * 100);
   });
 });
 
