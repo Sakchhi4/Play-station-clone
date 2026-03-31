@@ -75,7 +75,7 @@ window.addEventListener("scroll", () => {
   else navbar.classList.remove("sticky");
 });
 
-//Add Scroll Reveal Animations
+
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
