@@ -69,7 +69,7 @@ document.querySelectorAll("button").forEach(button => {
 
 
 window.addEventListener("scroll", () => {
-  const navbar = document.querySelector(".navbar"); // replace with your nav class
+  const navbar = document.querySelector(".navbar"); 
   if (!navbar) return;
   if (window.scrollY > 50) navbar.classList.add("sticky");
   else navbar.classList.remove("sticky");
@@ -98,7 +98,7 @@ document.querySelectorAll("section, .card, .feature, .product").forEach(el => {
 window.addEventListener("DOMContentLoaded", () => {
     const bannerContent = document.querySelector(".thismay-banner-content");
     if (bannerContent) {
-        bannerContent.style.top = "20%"; // Adjust as needed
+        bannerContent.style.top = "20%"; 
     }
 });
 const feedbackBtn = document.querySelector('.feedback-button');
@@ -197,7 +197,7 @@ document.addEventListener('keydown', (e) => {
     closeFeedbackModal();
   }
 });
-// ===== SIGN IN MODAL LOGIC =====
+
 const signInBtn = document.querySelector('.sign-in-button');
 const signInModal = document.getElementById('signInModal');
 const signInOverlay = document.getElementById('signInOverlay');
@@ -207,7 +207,7 @@ const userDisplay = document.getElementById('userDisplay');
 const logoutBtn = document.querySelector('.logout-btn');
 let currentUser = null;
 
-// Open sign-in modal
+
 if (signInBtn) {
   signInBtn.addEventListener('click', () => {
     signInModal.classList.add('active');
@@ -227,23 +227,22 @@ const closeSignInModal = () => {
   }
 };
 
-// Close button for sign-in modal
+
 signInModal.querySelector('.close-modal').addEventListener('click', closeSignInModal);
 signInOverlay.addEventListener('click', closeSignInModal);
 
-// Form validation and submission
+
 signInForm.addEventListener('submit', (e) => {
   e.preventDefault();
   
   const email = document.getElementById('email').value.trim();
   const password = document.getElementById('password').value.trim();
   
-  // Reset error messages
+
   document.getElementById('emailError').style.display = 'none';
   document.getElementById('passwordError').style.display = 'none';
   document.getElementById('loginError').style.display = 'none';
   
-  // Validate email
   if (!email) {
     document.getElementById('emailError').textContent = 'Email is required';
     document.getElementById('emailError').style.display = 'block';
@@ -257,7 +256,6 @@ signInForm.addEventListener('submit', (e) => {
     return;
   }
   
-  // Validate password
   if (!password) {
     document.getElementById('passwordError').textContent = 'Password is required';
     document.getElementById('passwordError').style.display = 'block';
@@ -278,11 +276,11 @@ signInForm.addEventListener('submit', (e) => {
     userDisplay.textContent = `Welcome back, ${email}!`;
     document.getElementById('loginSuccess').style.display = 'block';
     
-    // Update sign-in button text
+ 
     signInBtn.textContent = 'Account';
     signInBtn.style.background = '#28a745';
     
-    // Auto close after 2 seconds
+  
     setTimeout(() => {
       closeSignInModal();
     }, 2000);
@@ -303,7 +301,6 @@ if (logoutBtn) {
     document.getElementById('loginError').style.display = 'none';
     document.getElementById('loginSuccess').style.display = 'none';
     
-    // Reset sign-in button
     signInBtn.textContent = 'Sign In';
     signInBtn.style.background = '#0070d1';
     
