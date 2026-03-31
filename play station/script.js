@@ -110,7 +110,7 @@ const ratingInput = document.getElementById('rating');
 const ratingError = document.getElementById('ratingError');
 const feedbackSuccess = document.getElementById('feedbackSuccess');
 
-// Open feedback modal
+
 if (feedbackBtn) {
   feedbackBtn.addEventListener('click', () => {
     feedbackModal.classList.add('active');
