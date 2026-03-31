@@ -308,7 +308,7 @@ if (logoutBtn) {
   });
 }
 
-// Close on Escape key
+
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     if (signInModal.classList.contains('active') && !currentUser) {
