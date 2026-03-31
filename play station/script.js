@@ -1,4 +1,4 @@
-// === GENERIC MODAL HANDLER ===
+
 
 function setupModal(buttonSelector, modalId, overlayId) {
   const buttons = document.querySelectorAll(buttonSelector);
